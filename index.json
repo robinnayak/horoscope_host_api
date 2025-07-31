@@ -1,0 +1,5 @@
+{
+  "message": "hello world",
+  "education_api": "https://robinnayak.github.io/horoscope_host_api/education-data.json",
+  "horoscope_api" : "https://robinnayak.github.io/horoscope_host_api/horoscope_data.json"
+}
