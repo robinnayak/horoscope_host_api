@@ -421,7 +421,7 @@
       "indicators": [
         {
           "name": "RSI (Relative Strength Index)",
-          "category": "Momentum",
+          "type": "Momentum",
           "description": "RSI measures the speed and change of price movements. It oscillates between 0 and 100 and is commonly used to identify overbought and oversold conditions.",
           "strategy": "Look for RSI above 70 to signal overbought conditions (potential reversal down), and below 30 for oversold (potential reversal up). RSI divergences (when price moves in the opposite direction of RSI) can also signal reversals.",
           "benefit": "RSI helps traders identify potential reversal points with clarity, especially in ranging markets. It’s also useful to detect hidden momentum and trend strength.",
@@ -429,7 +429,7 @@
         },
         {
           "name": "Stochastic Oscillator",
-          "category": "Momentum",
+          "type": "Momentum",
           "description": "The Stochastic Oscillator compares a particular closing price of a security to a range of its prices over a certain period. It consists of two lines: %K and %D.",
           "strategy": "Buy when %K crosses above %D in the oversold region (<20), and sell when %K crosses below %D in the overbought region (>80). Divergences with price can strengthen reversal signals.",
           "benefit": "Useful for identifying potential turning points in the market with more sensitivity than RSI, especially in choppy markets.",
@@ -437,7 +437,7 @@
         },
         {
           "name": "MACD (Moving Average Convergence Divergence)",
-          "category": "Momentum",
+          "type": "Momentum",
           "description": "MACD is a trend-following momentum indicator that shows the relationship between two moving averages of a security’s price.",
           "strategy": "Watch for MACD line crossing above the signal line for bullish signals and below for bearish. MACD histogram helps visualize momentum shifts. MACD divergence with price may suggest trend reversal.",
           "benefit": "Combines trend and momentum in one view, making it a versatile tool for spotting trend changes and strength.",
@@ -448,7 +448,7 @@
       "VolumeIndicators": [
         {
           "name": "Volume Bars",
-          "category": "Volume",
+          "type": "Volume",
           "description": "Basic volume bars show how much of an asset is traded during a particular period.",
           "strategy": "Use rising volume during price increases to confirm a strong uptrend. Falling volume may signal weakening momentum or potential reversals.",
           "benefit": "Volume confirms price movements and adds conviction to trade setups. High volume often precedes significant price moves.",
@@ -456,7 +456,7 @@
         },
         {
           "name": "On-Balance Volume (OBV)",
-          "category": "Volume",
+          "type": "Volume",
           "description": "OBV uses volume flow to predict changes in stock price. It adds volume on up days and subtracts on down days.",
           "strategy": "Use OBV to confirm trends: if OBV is rising with price, it confirms strength. If OBV diverges from price, it can signal a possible reversal.",
           "benefit": "Helps anticipate price movements based on volume accumulation or distribution, even before it appears in price charts.",
@@ -464,7 +464,7 @@
         },
         {
           "name": "VWAP (Volume Weighted Average Price)",
-          "category": "Volume",
+          "type": "Volume",
           "description": "VWAP gives the average price a security has traded at throughout the day, based on both volume and price.",
           "strategy": "Traders look for price crossing above VWAP for bullish bias and below for bearish. It is often used as a dynamic support/resistance by institutional traders.",
           "benefit": "VWAP is a key institutional benchmark for fair value trading and helps measure buying/selling efficiency.",
@@ -477,7 +477,7 @@
       "indicators": [
         {
           "name": "Bollinger Bands",
-          "category": "Volatility",
+          "type": "Volatility",
           "description": "Bollinger Bands consist of a moving average with two standard deviation lines above and below it, dynamically adjusting to price volatility.",
           "strategy": "Price touching the upper band may indicate overbought conditions, while the lower band may suggest oversold. A squeeze (bands contracting) often precedes a breakout. Use in combination with RSI or MACD for confirmation.",
           "benefit": "Helps identify volatility expansion and potential breakout zones. Useful for spotting reversal or continuation signals during periods of price consolidation.",
@@ -485,7 +485,7 @@
         },
         {
           "name": "Average True Range (ATR)",
-          "category": "Volatility",
+          "type": "Volatility",
           "description": "ATR measures market volatility by calculating the average range between high and low over a given period. It does not indicate trend direction, only magnitude.",
           "strategy": "Higher ATR values suggest greater volatility, lower values indicate stability. Use ATR to set stop-loss distance or assess risk levels. Combine with trend indicators to filter trades.",
           "benefit": "Essential for risk management and position sizing. Helps adapt strategy based on current market volatility.",
@@ -493,7 +493,7 @@
         },
         {
           "name": "Donchian Channels",
-          "category": "Volatility",
+          "type": "Volatility",
           "description": "Donchian Channels plot the highest high and lowest low over a user-defined period, creating a volatility-based price envelope.",
           "strategy": "Buy when price breaks above the upper channel, and sell when it breaks below the lower. Use it in trend-following systems or breakout strategies.",
           "benefit": "Visually clean indicator that helps identify breakout opportunities and high/low extremes. Often used in trend-following systems.",
@@ -501,7 +501,7 @@
         },
         {
           "name": "Keltner Channel",
-          "category": "Volatility",
+          "type": "Volatility",
           "description": "Keltner Channels are based on an EMA with upper and lower bands set by ATR values, creating a volatility-adjusted envelope.",
           "strategy": "Look for price breakout above or below the channels to signal potential entries. Less volatile than Bollinger Bands, making it ideal for smoother signals.",
           "benefit": "Reduces noise compared to Bollinger Bands, and adapts well to trending markets. Good for spotting sustained breakouts.",
@@ -514,7 +514,7 @@
       "tools": [
         {
           "name": "Fibonacci Retracement",
-          "category": "Support/Resistance Tool",
+          "type": "Support/Resistance Tool",
           "description": "Fibonacci levels are horizontal lines that indicate potential support and resistance levels based on key Fibonacci ratios (23.6%, 38.2%, 50%, 61.8%, 78.6%).",
           "strategy": "Draw from swing high to swing low in a downtrend (and vice versa in an uptrend). Watch how price reacts at key levels like 38.2%, 50%, or 61.8% for entries or exits.",
           "benefit": "Widely used by traders to anticipate price corrections within trends. Great for timing pullbacks or taking profits.",
@@ -522,7 +522,7 @@
         },
         {
           "name": "Pivot Points",
-          "category": "Support/Resistance Tool",
+          "type": "Support/Resistance Tool",
           "description": "Pivot Points are calculated from the previous period's high, low, and close to identify future intraday support and resistance levels.",
           "strategy": "Use pivot levels (P, S1, S2, R1, R2) for entry/exit zones. Price trading above the pivot suggests bullish sentiment; below indicates bearishness.",
           "benefit": "Useful for intraday trading and setting predefined zones for stops, targets, and reversals.",
@@ -530,7 +530,7 @@
         },
         {
           "name": "Trend Lines",
-          "category": "Charting Tool",
+          "type": "Charting Tool",
           "description": "Trend lines are drawn manually to connect higher lows in an uptrend or lower highs in a downtrend.",
           "strategy": "Use trend lines to identify dynamic support/resistance and potential breakout zones. A break of a well-established trend line may signal a trend reversal.",
           "benefit": "Visually clarifies the trend direction and gives early signals of trend exhaustion or reversal.",
@@ -538,7 +538,7 @@
         },
         {
           "name": "Support & Resistance Zones",
-          "category": "Price Action Tool",
+          "type": "Price Action Tool",
           "description": "Horizontal areas where price repeatedly reacts, forming psychological support (floor) or resistance (ceiling) levels.",
           "strategy": "Mark levels where price has previously bounced or reversed. Enter near support in uptrends and sell near resistance in downtrends.",
           "benefit": "Core concept of price action trading. Helps in placing precise entries, stop-losses, and take-profits.",
@@ -546,7 +546,7 @@
         },
         {
           "name": "Chart Patterns",
-          "category": "Technical Tool",
+          "type": "Technical Tool",
           "description": "Patterns like Head & Shoulders, Double Tops/Bottoms, Flags, and Wedges signal potential trend continuation or reversal.",
           "strategy": "Identify the pattern and wait for a breakout or breakdown confirmation. Place stop-losses beyond the pattern boundary.",
           "benefit": "Gives early signals of trend shifts and possible strong moves. Common among institutional traders.",
@@ -554,7 +554,7 @@
         },
         {
           "name": "Volume Profile",
-          "category": "Market Structure Tool",
+          "type": "Market Structure Tool",
           "description": "Displays the volume traded at each price level to identify areas of high interest (high volume nodes) and low liquidity (low volume nodes).",
           "strategy": "Use high volume areas as potential support/resistance and low volume gaps as fast-move zones. Combine with price action.",
           "benefit": "Shows what price levels matter most to market participants — crucial for institutional-level analysis.",
@@ -562,7 +562,7 @@
         },
         {
           "name": "VWAP (Volume Weighted Average Price)",
-          "category": "Institutional Tool",
+          "type": "Institutional Tool",
           "description": "VWAP is the average price a security has traded at throughout the day, based on both volume and price.",
           "strategy": "Price above VWAP suggests bullish control, and below indicates bearish pressure. Used for mean-reversion or breakout trades.",
           "benefit": "Widely used by institutional traders. Helps avoid chasing price and improves entry precision.",
@@ -570,7 +570,7 @@
         },
         {
           "name": "Gann Fan",
-          "category": "Time/Price Tool",
+          "type": "Time/Price Tool",
           "description": "Gann Fans are diagonal lines based on angles that indicate key support/resistance zones based on time and price.",
           "strategy": "Use the 1x1 angle (45°) as a central balance line. Breaks of specific angles suggest trend shifts.",
           "benefit": "Combines geometry, time, and price for forecasting. Useful in long-term swing trading.",
@@ -678,41 +678,49 @@
   },
   "TradingStrategies": {
     "define": "Trading strategies are systematic approaches to trading that outline how to enter and exit trades based on specific criteria. They can be based on technical analysis, fundamental analysis, or a combination of both. Effective strategies help traders manage risk, identify opportunities, and make informed decisions in the market.",
-    "Scalping": {
+    "Strategies": [{
+      "name": "Scalping",
+      "type": "Short-Term",
       "define": "Scalping is a short-term trading strategy that involves making numerous trades throughout the day to capture small price movements. Scalpers aim to profit from minor fluctuations in price, often holding positions for just a few seconds to minutes. This strategy requires quick decision-making, strict risk management, and a deep understanding of market dynamics.",
       "description": "Scalping focuses on making short-term trades to profit from small price changes. Traders use high leverage and tight stop-losses to maximize returns on minimal price movements.",
       "strategy": "Enter trades based on technical indicators like moving averages or RSI. Use tight stop-losses and take profits quickly. Focus on high liquidity pairs to ensure quick execution.",
       "benefit": "Scalping allows traders to capitalize on small price movements, potentially generating consistent profits throughout the day. It requires minimal capital and can be done with high leverage.",
       "image": "https://yourcdn.com/images/trading-strategies/scalping.png"
     },
-    "DayTrading": {
+    {
+      "name": "Day Trading",
+      "type": "Short-Term",
       "define": "Day trading is a strategy where traders buy and sell financial instruments within the same trading day, closing all positions before the market closes. This approach aims to profit from short-term price movements and requires quick decision-making, technical analysis skills, and a solid understanding of market trends.",
       "description": "Day trading involves entering and exiting trades within the same day, avoiding overnight risk. Traders use technical analysis to identify short-term price movements and execute multiple trades daily.",
       "strategy": "Use technical indicators like moving averages, RSI, and MACD to identify entry and exit points. Focus on high volatility stocks or forex pairs. Set strict stop-loss levels to manage risk.",
       "benefit": "Day trading allows traders to take advantage of daily price fluctuations without holding positions overnight, reducing exposure to market gaps. It can lead to quick profits and requires minimal capital to start.",
       "image": "https://yourcdn.com/images/trading-strategies/day-trading.png"
     },
-    "SwingTrading": {
+    {
+      "name": "Swing Trading",
+      "type": "Medium-Term",
       "define": "Swing trading is a medium-term trading strategy that aims to capture price swings in financial markets. Traders hold positions for several days to weeks, using technical analysis to identify potential entry and exit points. This approach allows traders to profit from short- to medium-term price movements without the need for constant monitoring.",
       "description": "Swing trading focuses on capturing short- to medium-term price movements. Traders hold positions for several days to weeks, using technical analysis to identify potential entry and  exit points.",
       "strategy": "Identify key support and resistance levels using technical analysis. Enter trades on pullbacks to support in an uptrend or resistance in a downtrend. Use stop-loss orders to manage risk and set profit targets based on risk-reward ratios.",
       "benefit": "Swing trading allows traders to profit from larger price movements without the need for constant monitoring. It requires less time commitment compared to day trading and can be done with lower capital requirements.",
       "image": "https://yourcdn.com/images/trading-strategies/swing-trading.png"
     },
-    "BreakoutStrategy": {
+    {
+      "name": "Breakout Trading",
+      "type": "Short-Term",
       "define": "Breakout trading is a strategy that involves entering a position when the price breaks through a significant support or resistance level. Traders aim to capitalize on the momentum that follows the breakout, which often leads to substantial price movements.",
       "description": "Breakout trading focuses on entering positions when the price breaks through key support or resistance levels. Traders look for strong volume and momentum to confirm the breakout.",
       "strategy": "Identify key support and resistance levels using technical analysis. Enter long on a breakout above resistance or short on a breakdown below support. Use stop-loss orders just outside the breakout zone to manage risk.",
       "benefit": "Breakout trading allows traders to capture significant price movements that often follow breakouts, leading to potentially high profits. It can be applied in various markets and timeframes.",
       "image": "https://yourcdn.com/images/trading-strategies/breakout-strategy.png"
-    }
+    }]
   },
   "RiskPsychology": {
     "define": "Risk psychology refers to the emotional and psychological factors that influence traders' decision-making processes in financial markets. Understanding risk psychology helps traders manage emotions, avoid impulsive decisions, and develop a disciplined approach to trading. It involves recognizing cognitive biases, emotional triggers, and the impact of market sentiment on trading behavior.",
     "Psychology": [
       {
         "name": "Risk/Reward Ratios",
-        "category": "Risk Management",
+        "type": "Risk Management",
         "description": "The risk-to-reward ratio measures the potential reward a trader can earn for every dollar risked. It is a key concept in ensuring long-term profitability.",
         "strategy": "Define your stop-loss and target levels before entering a trade. Aim for a minimum risk/reward ratio of 1:2. If the setup does not meet the ratio, skip the trade.",
         "benefit": "Helps traders avoid low-quality setups and maintain profitability even with a lower win rate. Encourages structured planning and consistent risk exposure.",
@@ -720,7 +728,7 @@
       },
       {
         "name": "Trading Psychology",
-        "category": "Trader Mindset",
+        "type": "Trader Mindset",
         "description": "Trading psychology deals with the emotional discipline needed to manage trades. It involves controlling fear, greed, overconfidence, and hesitation.",
         "strategy": "Develop a trading routine that includes journaling, regular self-assessment, and mental preparation. Follow your trading plan strictly, and avoid emotional decisions.",
         "benefit": "Improves decision-making under pressure and enhances consistency. Reduces emotional mistakes that lead to losses.",
@@ -733,7 +741,7 @@
     "EconomicIndicators": [
       {
         "name": "Gross Domestic Product (GDP)",
-        "category": "Economic Indicator",
+        "type": "Economic Indicator",
         "description": "GDP measures the total economic output of a country. It indicates the health of the economy and influences currency values.",
         "strategy": "Monitor GDP growth rates to assess economic health. Positive GDP growth typically strengthens a country's currency, while negative growth can lead to depreciation.",
         "benefit": "Understanding GDP helps traders anticipate currency movements and adjust their trading strategies accordingly.",
@@ -741,7 +749,7 @@
       },
       {
         "name": "Impact of Interest Rates, GDP, Unemployment",
-        "category": "Economic Indicators",
+        "type": "Economic Indicators",
         "description": "Interest rates, GDP, and unemployment data offer key insights into a country's economic strength and currency valuation. Traders monitor these indicators to forecast potential market movements.",
         "strategy": "Watch for high-impact economic releases on the calendar (like NFP, GDP, CPI). Trade based on how actual data compares to expectations — strong GDP or rising interest rates often strengthen the currency.",
         "benefit": "Allows traders to anticipate major moves and align trades with macroeconomic trends, improving decision-making and timing.",
@@ -749,7 +757,7 @@
       },
       {
         "name": "Geopolitical Events & Central Banks",
-        "category": "Market Movers",
+        "type": "Market Movers",
         "description": "Geopolitical developments and central bank decisions can introduce volatility and shape long-term trends. These events influence risk sentiment and monetary policy expectations.",
         "strategy": "Monitor global news and central bank meetings. Avoid risky trades during high-uncertainty events. Align trades with central bank tone (hawkish/dovish) or market sentiment.",
         "benefit": "Understanding these factors helps traders avoid unpredictable volatility and align with the bigger picture in global markets.",
