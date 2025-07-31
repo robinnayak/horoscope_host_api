@@ -1,5 +1,5 @@
 {
-  "Technical Analysis": {
+  "TechnicalAnalysis": {
     "CandleStickPatterns": {
       "define": "Candlestick patterns are visual representations of price movements on a chart, formed by the open, high, low, and close prices of a specific time period. They help traders identify potential market reversals or continuations based on the shape and position of the candles.",
       "Bullish": [
